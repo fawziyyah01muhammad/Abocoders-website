@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Merriweather', sans-serif;
+}
+a:hover{
+    color: #ffffff;
+}
+nav{
+    display: flex;
+padding: 10px 6%;
+align-items: center;
+justify-content: space-between;
+background-color: #ffffff;
+}
+.nav-links{
+    flex: 2;
+    text-align: center;
+}
+.nav-links ul li{
+    text-align: right;
+    display: inline-block; 
+    padding: 5px 8px 0 8px; 
+    list-style: none;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:  #4D4B48;
+    font-size: 16px;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+.li2{
+    float: right;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+}
+.li2 button{
+    background-color:  #960ACA;
+    padding: 8px 25px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+a.active::after{
+	content: '';
+	width: auto;
+	height: 2px;
+	background:#960ACA;
+	display: block;
+}    
+.fa-times, .fa-bars{
+    display:none;
+}
+@media screen and (min-width:270px) and (max-width:780px){
+    .nav-links ul li{
+        display: block;
+        text-align: left;
+    }
+    .nav-links{
+        position:fixed;
+        background:white;
+        height: 50vh;
+        width:150px;
+        top: 0;
+        right: -150px;
+        text-align:left;
+        z-index: 2; 
+        transition: 1s;
+    }
+    .li2{
+        float: left;
+        text-align:left;
+        justify-content:left;
+        align-items: left;
+    }
+    .fa-bars, .fa-times{
+        display:block;
+        color:#4D4B48;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer; 
+    }
+.label img{
+        width:150px;
+        margin: -60px -70px -80px -30px;
+        padding: 0;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .nav-icons img{
+        padding: 0;
+        border-left: none;
+        margin: 13px 15px 0 15px;
+    }
+    nav{
+        padding: 5px;
+        margin: 0;
+    }
+    .label a{
+        color:  #4D4B48;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    a.active::after{
+        content: '';
+        width: auto;
+        height: 2px;
+        background:#4D4B48;
+        display:none;
+    }
+    .nav-icons a span{
+        margin:-40px 0px 10px -23px;
+    
+    }
+   
+}
+@media screen and (min-width:781px) and (max-width:958px){
+    .nav-links ul li a{
+        text-decoration: none;
+        color:  #4D4B48;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+    nav{
+        display: flex;
+    padding: 10px 2%;
+    }
+}
+
+
+.hero-image{
+    background-image: url(../img/homepage/b.g.svg);
+    width: 100%;
+	height:90vh;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+}
+.hero-text{
+    color: white;
+    padding: 130px 0 0 30px;
+    font-family: 'Merriweather';
+    font-style:normal;
+}
+.hero-text h3{
+    font-weight: 500;
+font-size: 60px;
+}
+.hero-text p{
+font-weight: 300;
+font-size: 12px;
+}
+.hero-text button{
+    background: #960ACA;
+border-radius: 10px;
+padding: 8px 40px;
+font-variant: small-caps;
+color: #ffffff;
+}
+
+
+.about-row{
+    display: flex;
+    margin:18% 8%;
+    gap: 20%;
+}
+.about-col{
+    flex-basis: 50%;
+    font-family: 'Merriweather';
+}
+.about-col h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 70px;
+}
+.about-col p{
+    font-weight: 300;
+font-size: 15px;
+}
+
+.focus{
+    background-color:  #F4F3F3;
+    padding: 50px;
+    font-family: 'Merriweather';
+}
+.focus h2{
+    font-style: normal;
+font-weight: 700;
+font-size: 48px;
+padding: 20px;
+}
+.focus-row{
+    display: flex;
+    justify-content: center;
+}
+.focus-col{
+    flex-basis: 31%;
+
+}
+
+.students-row{
+    display: flex;
+}
+
+
+
+
+
+
+
