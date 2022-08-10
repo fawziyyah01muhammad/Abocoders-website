@@ -192,26 +192,62 @@ font-size: 15px;
 
 .focus{
     background-color:  #F4F3F3;
-    padding: 50px;
+    padding: 70px 50px;
     font-family: 'Merriweather';
 }
 .focus h2{
     font-style: normal;
 font-weight: 700;
 font-size: 48px;
-padding: 20px;
+padding: 40px;
 }
 .focus-row{
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 .focus-col{
     flex-basis: 31%;
-
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding:10px 30px;
+    color: #000000;
 }
-
+.focus-col p{
+    font-style: normal;
+font-weight: 300;
+font-size: 14px;
+}
+.focus-col h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    padding-top: 20px;
+}
+.focus-col img{
+    margin: -50px 0 0 -40px;
+}
+.students{
+    background-image: url(../img/homepage/b.g2.svg);
+    width: 100%;
+	height:90vh;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+}
 .students-row{
     display: flex;
+    color: #ffffff;
+    justify-content: center;
+}
+.students-col{
+    font-family: 'Merriweather';
+    flex-basis: 25%;
+}
+.students-col h3{
+    font-style: normal;
+font-weight: 700;
+font-size: 38px;
 }
 
 
