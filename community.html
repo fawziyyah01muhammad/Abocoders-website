@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>Abocoders website</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html"><img src="./img/homepage/logo.svg" alt=""></a>
+        <div class="nav-links">
+            <ul>
+                <div class="nav-links" Id="checkmenu">
+                    <i class="fa fa-times" onclick ="hideMenu()"></i>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a  class="active" href="./contact.html">Contact Us</a></li>
+                <div class="li2">
+                    <li><a href="./donate-partner.html">Donate/partner with us</a></li>
+                    <button><a href="https://bit.ly/3BbCYfC">Register</a></button>
+                    </div> 
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick ="showMenu()"></i>
+    </nav>
+
+<div class="community">
+    <h1>Join Abocoder’s <br> community</h1>
+    <img src="./img/other/happy-lady.svg" alt="">
+    <div class="community-text">
+    <h3>Define the standards</h3>
+    <p>Join us and redefine the tech space. The next level of your career starts <br> with us now!</p>
+
+    <form name="forms">
+        <h5>Mentor</h5>
+        <select name="mentors">
+            <option value="Product designer">select</option>
+          <option value="Product designer">Product designer</option>
+          <option value="Graphics designer">Graphics designer</option>
+          <option value="Web developer">Web developer</option>
+          <option value="Data analyst">Data analyst</option>
+        </select>
+
+        <h5>Mentee</h5>
+        <select name="mentors">
+            <option value="Product designer">select</option>
+          <option value="Product designer">Product designer</option>
+          <option value="Graphics designer">Graphics designer</option>
+          <option value="Web developer">Web developer</option>
+          <option value="Data analyst">Data analyst</option>
+        </select>
+      </form>
+    </div>
+</div>
+    
+<div class="footer">
+    <div class="footer-row">
+        <div class="footer-col">
+            <h1>Abocoders</h1>
+        </div>
+        <div class="footer-col">
+            <ul>
+                <h5>Get started</h5>
+                <li><a href=""> Partner With Us </a></li>
+                <li><a href=""> Make A Donation</a></li>
+                <li><a href="">Start An S.C.A Chapter</a></li>
+            </ul>
+        </div>
+
+            <div class="footer-col">
+                <ul>
+                    <h5>About Us</h5>
+                    <li><a href="">Meet The Team</a></li>
+                <li><a href=""> Privacy Policy</a></li>
+                <li><a href=""> Terms And Condition</a></li>
+                </ul>        
+    </div>
+    <div class="footer-col">
+        <ul>
+            <h5> Community</h5>
+            <li><a href="">Upcoming Events</a></li>
+        <li><a href="">Join Our Virtual Community</a></li>
+        </ul>   
+        </div>
+    </div>
+        <p>© COPYRIGHT -ASPILOS FOUNDATION 2022</p>
+</div>
+
+
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+
+<script>
+$('.owl-carousel').owlCarousel({
+    stagePadding:130,
+     loop:true,
+     margin:20,
+     responsiveClass:true,
+     responsive:{
+         0:{
+             items:1,
+             nav:false
+         },
+         1000:{
+             items:2,
+             nav:true,
+             loop:false
+         }
+     }
+ })
+ </script>
+<script>
+	var checkmenu = document.getElementById("checkmenu")  
+	function showMenu(){
+		checkmenu.style.right = "0px";
+	}
+	function hideMenu(){
+		checkmenu.style.right = "-200px";
+	}
+</script>      
+</body>
+</html>

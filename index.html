@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
     <title>Abocoders website</title>
 </head>
 <body>
@@ -23,11 +25,11 @@
                 <div class="nav-links" Id="checkmenu">
                     <i class="fa fa-times" onclick ="hideMenu()"></i>
                 <li><a class="active" href="./index.html">Home</a></li>
-                <li><a href="./index.html">About Us</a></li>
-                <li><a href="./index.html">Contact Us</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
                 <div class="li2">
-                    <li><a href="./index.html">Donate/partner with us</a></li>
-                <button><a href="./index.html">Register</a></button>
+                    <li><a href="./donate-partner.html">Donate/partner with us</a></li>
+                    <button><a href="https://bit.ly/3BbCYfC">Register</a></button>
                     </div> 
             </ul>
         </div>
@@ -235,14 +237,18 @@
 </div>
 
 
+
+
+
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
 
 <script>
-    $('.owl-carousel').owlCarousel({
+   $('.owl-carousel').owlCarousel({
+    stagePadding:100,
      loop:true,
-     margin:10,
+     margin:20,
      responsiveClass:true,
      responsive:{
          0:{
@@ -257,6 +263,8 @@
      }
  })
  </script>
+
+<!---------- JavaScript for toggle Menu ------->
 <script>
 	var checkmenu = document.getElementById("checkmenu")  
 	function showMenu(){
@@ -265,6 +273,7 @@
 	function hideMenu(){
 		checkmenu.style.right = "-200px";
 	}
-</script>      
+</script>     
+
 </body>
 </html>
