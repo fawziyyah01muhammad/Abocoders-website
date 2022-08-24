@@ -245,7 +245,7 @@ font-size: 20px;
     font-style: normal;
 font-weight: 700;
 font-size: 48px;
-margin: 40px;
+margin: 40px 40px 70px 40px;
 }
 .focus-row{
     display: flex;
@@ -348,7 +348,7 @@ font-variant: small-caps;
 font-style: normal;
 font-weight: 700;
 font-size: 48px;
-margin:0 0 0 90px;
+margin: 50px 0 -30px 100px;
     }
  .beneficiaries .owl-carousel{
     padding:0 50px 0 0;
@@ -427,6 +427,15 @@ font-size: 14px;
 @media(max-width:958px){
     .footer-row{
         flex-direction: column;
+    }
+    .footer-col ul li a {
+        font-size: 18px;
+    }
+    .footer-col h5 {
+        font-size: 35px;
+    }
+    .footer-col h1{
+        font-size: 60px;
     }
 }
 
@@ -519,11 +528,9 @@ width: 50%;
 }
 .about-project-challenges img{
  position: absolute;
- top: 230%;
  right: 0;
-  width: 420px;
-  height: 550px;
 }
+
 .about-project-challenges-white{
     background-color: white;
     color: rgba(0, 0, 0, 0.8);
@@ -547,6 +554,66 @@ font-size: 25px;
   padding:0px 60px 50px 60px;
 }
 
+@media screen and (min-width:270px) and (max-width:780px){
+    .about-project-challenges{
+        background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+       padding:20px 10px 20px 10px;
+       flex-direction: column;
+    }
+    .about-project-challenges img{
+        position:relative;
+        right: 0;
+       }
+       .about-project-challenges-white{
+        width: 100%;
+       }
+       .about-project-challenges-white ul li {
+        list-style: none;
+        padding: 6px 10px;
+    }
+    .about-project-challenges-white ul li a {
+        font-size: 17px;
+    }
+    .about-project-challenges-white p {
+        padding: 0px 10px 50px 10px;
+
+    }
+    .theme-launch{
+       flex-direction: column;
+    }
+       .theme{
+        width: 100%;
+       }
+       .launched{
+        width: 100%;
+       }
+       .apply-now button{
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+       background-color: #960ACA;
+       color: white;
+       display: none;
+    }
+    .what-we-do-col img{
+        margin: 10px;
+        /* display: none; */
+    }
+    .what-we-do {
+        padding: 50px 0 40px 15px;
+       flex-direction: column;
+    }
+    .what-we-do h1 {
+        font-size: 25px;
+    }
+    .h2{
+        border-radius: 0;
+    }
+    .theme-launch p {
+        font-size: 20px;
+    }
+}
+
 
 .our-community{
     padding: 70px;
@@ -568,6 +635,10 @@ flex-basis: 50%;
     font-size: 30px;
 }
 
+.our-community-col img{
+    width: auto;
+    height: auto;
+}
 .our-team{
     background: #FBFBFB;
     padding: 70px;
@@ -633,7 +704,55 @@ text-align: center;
     border-radius: 15px;
 }
 
+@media screen and (min-width:270px) and (max-width:958px){
+    .our-community-row{
+       flex-direction: column;
+    }
+    .our-team-row{
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    .our-community-col img{
+        width: 100%;
+        height: auto;
+    }
+    .our-community {
+        padding: 20px;
+        margin-top: 80px;
+    }
+    .our-community-col h3 {
+        font-size: 23px;
+        font-style: bold;
+    }
+    .our-team h2 {
+        font-size: 35px;
+    }
+    .our-team-col img{
+        width: 100%;
+    }
+}
+@media screen and (min-width:550px) and (max-width:958px){
+    .about-project-challenges {
+        background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+        padding: 20px 0 20px 20px;
+        display: flex;
+    }
+    p {
+        font-size: 20px;
+    }
+    .our-team-col p {
+        font-size: 17px;
+    }
+    .our-team-col h6{
+        font-size: 20px;
+    }
+}
 
+
+
+
+/* --------------------contact----------------------- */
 .contact{
     background: #E6D3FA;
     padding: 70px;
@@ -721,7 +840,6 @@ font-size: 15px;
 }
 .join img{
     margin: -8% 0 0 40%;
-
 }
 .join button img{
     margin:0;
@@ -735,6 +853,81 @@ font-variant: small-caps;
 font-weight: 500;
 font-size: 13px;
 margin: 20px 0 0 40%;
+}
+@media screen and (min-width:270px) and (max-width:551px){
+    .headquater-row{
+        flex-direction: column;
+    }
+    .headquater{
+        padding: 20px;
+    }
+    .join img{
+        margin: 0% 0 0 10%;
+    }
+    .join button{
+    margin: 20px 0 0 10%;
+    }
+    .address-row{
+        flex-direction: column;
+    }    
+    .contact-row{
+        flex-direction: column;   
+    }
+    .contact {
+        padding: 50px;
+    }
+    .address {
+        padding: 20px;
+    }
+    .contact h2 {
+        font-weight: 700;
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 30px;
+    }
+    .contact-col img {
+        width: 100%;
+        height: auto;
+    }
+    .contact-col p{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 20px;
+       }
+       .address-col ul li a {
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:552px) and (max-width:958px){
+    .address-row{
+        flex-direction: column;
+    }    
+    .contact-row{
+        flex-direction: column;   
+    }
+    .contact {
+        padding: 50px;
+    }
+    .address {
+        padding: 20px;
+    }
+    .contact-col img{
+        width: 100%;
+        height: auto;
+       }
+       .contact-col p{
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 30px;
+       }
+       .address-col ul li a {
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 400;
+        font-size: 20px;
+    }
 }
 
 .community{
@@ -777,6 +970,33 @@ font-size: 16px;
 color: #000000;
 margin: 10px 0;
 }
+@media screen and (min-width:270px) and (max-width:551px){
+    .community{
+        padding: 20px 0px 50px 0;
+        font-family: 'Merriweather';
+    }
+    .community h1{
+        background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+    border-radius: 0;
+    padding: 40px 10px;
+    font-weight: 500;
+    font-size: 44px;
+    color: #FFFFFF;
+    }
+    .community img{
+        position:relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        float: left;
+     }
+
+     .community-text {
+        padding: 30px 10px;
+    }
+}
+
+
 
 .partner-with-us{
 font-family: 'Merriweather';
