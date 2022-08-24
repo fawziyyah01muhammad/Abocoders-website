@@ -103,7 +103,7 @@ a.active::after{
         margin: 13px 15px 0 15px;
     }
     nav{
-        padding: 5px;
+        padding: 15px 30px;
         margin: 0;
     }
     .label a{
@@ -233,7 +233,16 @@ font-size: 20px;
 .about-col img{
     width: 100%;
 }
-
+.purple{
+   display: none;
+   }
+   .d-p{
+    display: none;
+}
+.about-col p{
+    font-weight: 300;
+font-size: 16px;
+}
 }
 
 .focus{
@@ -276,6 +285,15 @@ font-size: 14px;
 @media screen and (min-width:270px) and (max-width:958px){
     .focus-row{
         flex-direction: column;
+    }
+    .focus h2 {
+        font-size: 40px;
+        margin: 40px 0px 70px 0px;
+    }
+    .focus{
+        background-color:  #F4F3F3;
+        padding: 70px 20px;
+        font-family: 'Merriweather';
     }
     }
 .students{
@@ -334,12 +352,17 @@ font-variant: small-caps;
 @media screen and (min-width:270px) and (max-width:958px){
     .students-row{
         flex-direction: column;
+        padding:50px 20px;
+        gap: 10px;
     }
     .students{
         background-image: url(../img/homepage/b.g2.svg);
         width: 100%;
         height:100%;
     }
+.students-col h2{
+    font-size: 35px;
+}
     }
 
 
@@ -393,6 +416,36 @@ font-weight: 400;
 font-size: 14px;
 }
 
+@media screen and (min-width:270px) and (max-width:958px){
+    .beneficiaries .owl-carousel{
+        padding:0;
+     } 
+     .beneficiaries .owl-carousel .owl-item img {
+        display: block;
+        width:auto;
+    }    
+    .beneficiaries .owl-carousel .owl-item{
+        margin: 0px 10px 0 0;
+        width: 100%;
+    }
+    .beneficiaries-col{
+        background: #FAF9F9;
+        border-radius: 32px 32px 0px 0px;
+        padding: 20px 0 0 0;
+        width: auto;
+       height: 400px;
+    }
+    .beneficiaries-col p{
+    font-weight: 300;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    padding:50px 30px;
+    margin-bottom: 20px;
+    }
+    .beneficiaries h2{
+        font-size: 30px;
+    }
+    }
 
 .footer{
     background-color: black;
@@ -432,10 +485,16 @@ font-size: 14px;
         font-size: 18px;
     }
     .footer-col h5 {
-        font-size: 35px;
+        font-size: 30px;
     }
     .footer-col h1{
-        font-size: 60px;
+        font-size: 50px;
+    }
+    .footer {
+        background-color: black;
+        padding: 50px 20px 10px 20px;
+        color: white;
+        font-family: 'Merriweather', sans-serif;
     }
 }
 
@@ -928,6 +987,12 @@ margin: 20px 0 0 40%;
         font-weight: 400;
         font-size: 20px;
     }
+    .theme {
+        padding: 5% 5%;
+    }
+    .launched{
+        padding: 5%;
+    }
 }
 
 .community{
@@ -970,7 +1035,7 @@ font-size: 16px;
 color: #000000;
 margin: 10px 0;
 }
-@media screen and (min-width:270px) and (max-width:551px){
+@media screen and (min-width:270px) and (max-width:958px){
     .community{
         padding: 20px 0px 50px 0;
         font-family: 'Merriweather';
@@ -989,6 +1054,7 @@ margin: 10px 0;
         left: 0;
         right: 0;
         float: left;
+        width: 100%;
      }
 
      .community-text {
@@ -1051,3 +1117,31 @@ padding: 50px;
 margin: 0;
 }
 
+@media screen and (min-width:270px) and (max-width:551px){
+    .partner-with-us-row{
+        flex-direction: column;
+        padding: 50px;
+    }
+    .partner-with-us-purple img{
+        margin: 0;
+     padding: 0;
+     width: 100%;
+    }
+    .partner-with-us-row p {
+        font-size: 22px;
+    }
+    .partner-with-us-purple{
+        padding: 10px;
+     width: 100%;
+        }
+        .partner-with-us-row h5 {
+            font-weight: 700;
+            font-size: 30px;
+            color: #000000;
+        }
+}
+@media screen and (min-width:552px) and (max-width:958px){
+    .partner-with-us-row p {
+        font-size: 23px;
+    }
+}
