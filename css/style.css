@@ -122,6 +122,12 @@ a.active::after{
         margin:-40px 0px 10px -23px;
     
     }
+    .li2 button{
+        background-color:  #960ACA;
+        padding: 8px 25px;
+        border-radius: 5px;
+        margin-left:5px;
+    }
    
 }
 @media screen and (min-width:781px) and (max-width:958px){
