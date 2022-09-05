@@ -143,7 +143,18 @@ a.active::after{
     padding: 10px 2%;
     }
 }
-
+@media screen and (min-width:2550px){
+    .nav-links ul li a{
+        font-size: 50px;
+    }
+    .li2 button{
+       font-size: 45px;
+       padding:20px 30px;
+    }
+    nav a img{
+        width: 130px;
+    }
+}
 
 .hero-image{
     background-image: url(../img/homepage/b.g.svg);
@@ -316,7 +327,7 @@ font-size: 14px;
     }
     }
 .students{
-    background-image: url(../img/homepage/b.g2.svg);
+    background-image: url(../img/homepage/b.g2.png);
     width: 100%;
 	height:100%;
 	background-size: cover;
@@ -517,6 +528,21 @@ font-size: 14px;
         font-family: 'Merriweather', sans-serif;
     }
 }
+    @media screen and (min-width:2550px){
+        .footer-col ul li a {
+            font-size: 30px;
+        }
+        .footer-col h5 {
+            font-size: 70px;
+        }
+        .footer-col h1{
+            font-size: 100px;
+        }
+        .footer p{
+            font-size: 40px;
+        }
+    }
+
 
 /* ----------------------About page--------------------- */
 .about-us{
@@ -692,7 +718,76 @@ font-size: 25px;
         font-size: 20px;
     }
 }
-
+@media screen and (min-width:2550px){
+    .h2{
+        font-size: 80px;
+        }
+        .what-we-do h1{
+        font-size: 100px;
+        }
+        .what-we-do p{
+        font-size: 60px;
+        }
+        .what-we-do button{
+            background: #960ACA;
+        border-radius: 4px;
+        padding: 10px 80px;
+        color: white;
+        font-variant: small-caps;
+        font-size: 60px;
+        }
+        
+        .what-we-do-col img{
+            margin: 90px;
+            width: 100%;
+            height: auto;
+        }
+        .theme{
+            background: #d5b6f650;
+            justify-content: center;
+            width: 50%;
+            padding: 5% 10%;
+        }
+         h3{
+        font-size: 66px;
+        }
+        .theme-launch p{
+        font-size: 54px;
+        }
+        .apply-now{
+            position: relative;
+            top: 50px;
+            margin-left: 80%;
+        }
+        .apply-now button{
+            border-radius: 50%;
+            width: 220px;
+            height: 220px;
+           background-color: #960ACA;
+           color: white;
+           font-size: 50px;
+        }
+        
+        .about-project-challenges{
+            background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+           padding:80px 0 80px 180px;
+           display: flex;
+        }
+        .about-project-challenges img{
+         position: absolute;
+         right: 0;
+         width: 43%;
+        }
+        .about-project-challenges-white ul li a{
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: 700;
+        font-size: 55px;
+        }
+        .about-project-challenges-white p{
+          font-size: 50px;
+          padding:0px 60px 50px 60px;
+        }   
+}
 
 .our-community{
     padding: 70px;
@@ -776,6 +871,10 @@ text-align: center;
     padding: 20px 15px 0px 20px;
     border-radius: 15px;
 }
+.catherine img{
+    width: 105px;
+    height:100%;
+}
 .onyeka{
     background:  #d99af0c8;
     justify-content: center;
@@ -783,7 +882,7 @@ text-align: center;
     border-radius: 15px;
 }
 .onyeka img{
-    width: 130px;
+    width: 105px;
     height:100%;
 }
 .joseph{
@@ -837,9 +936,41 @@ text-align: center;
         font-size: 20px;
     }
 }
-
-
-
+@media screen and (min-width:2550px) {
+    .our-community h3{
+        font-size: 100px;
+    }
+    .our-community-col{
+    flex-basis: 50%;
+    
+    }
+    .our-community-col h3{
+        font-size: 90px;
+    }
+    
+    .our-community-col img{
+        width: 100%;
+        height: auto;
+    }
+    .our-community-col p{
+        font-size: 50px;
+    }
+    .our-team h2{
+    font-size: 130px;
+    }
+    .our-team-col h6{
+    font-size: 31px;
+    }
+    .our-team-col p{
+        font-size: 44px;
+        }
+    .our-team-col{
+        width: 100%;
+    }
+    .our-team-col img{
+        width: 100%;
+    }
+}
 
 /* --------------------contact----------------------- */
 .contact{
@@ -878,11 +1009,31 @@ text-align: center;
     box-shadow: 5.60291px 5.60291px 29.8822px rgba(0, 0, 0, 0.12);
     padding: 30px 70px 30px 30px;
 }
-.address-col img{
+.address-col {
+    background: #FBFBFB;
+    box-shadow: 5.60291px 5.60291px 29.8822px rgba(0, 0, 0, 0.12);
+    padding: 30px 70px 0px 30px;
+}
+.address-col-img{
     background-color:  #FBF1FF;
-    padding: 50px;
-    border-radius: 50%;
-     margin: -60px 0 0 -50px ;
+    width: 150px;
+    height: 150px;
+    border-radius: 36% 30% 96% 50%;
+    margin: -35px 0 25px -35px;
+}
+.address-col-img-phone{
+    background-color:  #FBF1FF;
+    width: 150px;
+    height: 150px;
+    border-radius: 96% 50% 10% 30%;
+    margin: 84px -70px 0 60px;
+}
+.address-col-img-phone img{
+    margin: 50px;
+}
+
+.address-col-img img{
+   margin: 50px;
 }
 .address-col h4{
     font-weight: 700;
